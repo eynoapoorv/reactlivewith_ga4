@@ -4,6 +4,17 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import ReactGA from "react-ga4";
+
+ReactGA.initialize("G-52KSN4RQ4Y");
+
+// Send pageview with a custom path
+ReactGA.send({
+  hitType: "pageview",
+  page: window.location.pathname,
+  title: "Custom Title"
+});
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
