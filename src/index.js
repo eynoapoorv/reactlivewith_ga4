@@ -11,16 +11,10 @@ ReactGA.initialize("G-52KSN4RQ4Y");
 // Send pageview with a custom path
 ReactGA.send({
   hitType: "pageview",
-  
+
   page: window.location.pathname,
   title: "Custom Title"
 });
-const result = ReactGA.send({
-  hitType: "pageview",
-  page: window.location.pathname,
-  title: "Custom Title"
-});
-console.log("page", result)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
