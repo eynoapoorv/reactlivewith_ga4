@@ -12,7 +12,9 @@ function App() {
     // Fetch count data from Google Analytics API
     const fetchData = async () => {
       try {
-        const analyticsData = await ReactGA.pageview(window.location.pathname + window.location.search);
+        const analyticsData = await ReactGA.send(window.location.pathname + window.location.search);
+console.log("analytics",analyticsData )
+        
         // Extract count information from analyticsData and update the state
         setCount(analyticsData.count); // This is just a hypothetical example; adjust based on your actual data
       } catch (error) {
