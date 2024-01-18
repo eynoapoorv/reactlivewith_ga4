@@ -38,7 +38,7 @@ function App() {
         </h1>
         <h1>LIVE REACT APPLICATION</h1>
 
-        DISPLAY COUNT : {count}
+        <h1> DISPLAY COUNT : {count}</h1>
       </header>
     </div>
   );
