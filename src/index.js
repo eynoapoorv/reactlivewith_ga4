@@ -12,7 +12,7 @@ ReactGA.initialize("G-52KSN4RQ4Y");
 ReactGA.send({
   hitType: "pageview",
 
-  page: window.location.pathname,
+  page: '/indexPage',
   title: "Custom Title"
 });
 
